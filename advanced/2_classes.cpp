@@ -9,7 +9,7 @@ const double PI = 3.1415;
  * regardless of whether they are public or private
  * 
  * if you don't have a constructor in your class, the
- * compiler will generate a default compiler.
+ * compiler will generate a default constructor.
 */
 
 class Cylinder {
