@@ -1,7 +1,7 @@
 # C++ Beginner To Advanced
 
 This is a repository that I designed for Education purposes.
-It can take an individual from beginner level to an advanced level with the help of some examples.
+It can help an individual to use `C++` features from beginner level to an advanced level with the help of some examples.
 
 To use this repository efficiently, one will have to comment or comment out some code to adjust it to his need, so that he/she will control what he/she will see in the terminal.
 
