@@ -51,3 +51,8 @@ int main() {
     cout << "Done" << endl;
     return 0;
 }
+/**
+ * The reason why destructors are called in stack format (last in first out),
+ * is because they are higher chances that older objects depends on earlier objects.
+ * Hence, earlier objects are destroyed last.
+*/
