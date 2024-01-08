@@ -2,7 +2,7 @@
 #include <string_view>
 
 /**
- * this is keyword which is pointer whose address is where our
+ * `this` is keyword which is pointer whose address is where our
  * object is created.
  * 
 */
@@ -26,6 +26,7 @@ class Dog{
             *(this->p_age) = p_age;
             return this;
         }a */
+
         // chain using dereferencing this pointer
         Dog& set_dog_name(string_view name) {
             this->name = name;
