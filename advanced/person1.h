@@ -12,30 +12,26 @@ class Person
     friend ostream& operator<<(ostream& out, const Person& person);
     public:
         Person();
-        Person(string& first_name_param, string& last_name_param);
+        Person(string_view fullname, int age, const string address);
         ~Person();
 
         // Getters
-        string get_first_name() const {
-            return first_name;
+        string get_full_name() const {
+            return m_full_name;
         }
 
-        string get_last_name() const {
-            return last_name;
+        int get_age() const {
+            return m_age;
         }
-        // setters
-        void set_first_name(string_view fn){
-            first_name = fn;
+        string get_address()const{
+            return m_address;
         }
-        void set_last_name(string_view ln){
-            last_name = ln;
-        }
+        public:
+            string m_full_name{"None"};
         protected:
-            /* now the following varaibles can be accessed
-            and modified in derived class
-            */
-            string first_name{"Mysterious"};
-            string last_name{"Person"};
+            int m_age{0};
+        private:
+            string m_address{"None"};
 
 };
 
