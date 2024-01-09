@@ -1,19 +1,19 @@
 #include "person1.h"
-#include "engineer.h"
+#include "nurse.h"
 
-Engineer::Engineer()
+Nurse::Nurse()
 {
 }
 
-ostream& operator<<(ostream& out, const Engineer& operand) {
-    out << "Engineer [Full name : " << operand.get_full_name() <<
+ostream& operator<<(ostream& out, const Nurse& operand) {
+    out << "Nurse [Full name : " << operand.get_full_name() <<
                     ",age : " << operand.get_age() <<
                     ",address : " << operand.get_address() <<
-                    ",practice certificate id : " << operand.contract_count << endl;
+                    ",practice certificate id : " << operand.practice_certificate_id << endl;
 
     return out;
 }
 // Destructor
-Engineer::~Engineer()
+Nurse::~Nurse()
 {
 }

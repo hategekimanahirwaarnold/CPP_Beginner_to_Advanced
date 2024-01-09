@@ -3,6 +3,9 @@
 #include "player2.h"
 #include "nurse.h"
 #include "engineer.h"
+#include "civilEngineer.h"
+#include "engineer1.h"
+#include "civil1.h"
 
 int main() {
     Person p1("Hirwa Hat", 21, "Kimisagara");
@@ -36,7 +39,18 @@ int main() {
     // engineer.m_age = 55 // compiler error
     // engineer.m_address = "dfdfdfdf " // compiler error
     cout << "engineer: " << engineer << endl;
- 
+
+    cout << "----------------------------" << endl;
+    CivilEngineer ce;
+    /**
+     * Here we can't change any variable directly since they are
+     * all private
+    */
+    // ce.m_full_name = "Kanye engineer";  -> compiler error
+    // ce.m_age = 55 // compiler error
+    // ce.m_address = "dfdfdfdf " // compiler error
+    cout << "Civil Engineer: " << ce << endl;
+  
     return 0;
 
 }
