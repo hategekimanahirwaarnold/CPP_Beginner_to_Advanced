@@ -12,7 +12,7 @@ class Person
     friend ostream& operator<<(ostream& out, const Person& person);
     public:
         Person();
-        Person(string_view fullname, int age, const string address);
+        Person(string_view fullname, int age, string_view address);
         ~Person();
 
         // Getters

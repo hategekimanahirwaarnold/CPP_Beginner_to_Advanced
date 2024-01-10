@@ -14,6 +14,8 @@ class Civil : private Engineer1
     friend ostream& operator<<(ostream& , const Civil& operand);
     public:
         Civil();
+        Civil(string_view fullname, int age, string_view address, 
+                int contract_count, string_view speciality);
         ~Civil();
 
         void build_roads(){

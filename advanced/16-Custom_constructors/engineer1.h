@@ -13,6 +13,8 @@ class Engineer1 : public Person
     friend ostream& operator<<(ostream& , const Engineer1& operand);
     public:
         Engineer1();
+        Engineer1(string_view fullname, int age, string_view address, 
+                int contract_count);
         ~Engineer1();
 
         void build_something(){
