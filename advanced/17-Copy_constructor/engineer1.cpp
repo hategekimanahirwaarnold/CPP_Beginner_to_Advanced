@@ -30,7 +30,7 @@ Engineer1::Engineer1(const Engineer1& source)
     cout << "Custom copy constructor for engineer called..." << endl;
 }
 */
-
+// copy constructor
 Engineer1::Engineer1(const Engineer1& source)
             : Person(source) // This is good
             , contract_count(source.contract_count)
