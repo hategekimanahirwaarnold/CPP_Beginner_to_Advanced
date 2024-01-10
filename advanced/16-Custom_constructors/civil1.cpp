@@ -5,15 +5,13 @@ Civil::Civil()
 {
     cout << "Default constructor for civil engineer called..." << endl;
 }
-/**
- * Civil::Civil(string_view fullname, int age, string_view address, 
+Civil::Civil(string_view fullname, int age, string_view address, 
                 int contract_count, string_view speciality) :
              Engineer1(fullname, age, address, contract_count),
              m_speciality(speciality)
 {
     cout << "Custom constructor for civil engineer called..." << endl;
 }
-*/
 /**
 Civil::Civil(string_view fullname, int age, string_view address, 
                 int contract_count, string_view speciality) 
